@@ -1,0 +1,107 @@
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git init
+Initialized empty Git repository in C:/Users/HP/Documents/March1901/.git/
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ ls
+images/  open.html  zon.css
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/
+        open.html
+        zon.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git add .
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   images/bg-hero-desktop.svg
+        new file:   images/bg-hero-mobile.svg
+        new file:   images/favicon-32x32.png
+        new file:   images/icon-email.svg
+        new file:   images/icon-location.svg
+        new file:   images/icon-phone.svg
+        new file:   images/illustration-flowing-conversation.svg
+        new file:   images/illustration-grow-together.svg
+        new file:   images/illustration-mockups.svg
+        new file:   images/illustration-your-users.svg
+        new file:   images/logo.svg
+        new file:   open.html
+        new file:   zon.css
+
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git commit -m "My first project in the month of March"
+[main (root-commit) 6afac26] My first project in the month of March
+ 13 files changed, 446 insertions(+)
+ create mode 100644 images/bg-hero-desktop.svg
+ create mode 100644 images/bg-hero-mobile.svg
+ create mode 100644 images/favicon-32x32.png
+ create mode 100644 images/icon-email.svg
+ create mode 100644 images/icon-location.svg
+ create mode 100644 images/icon-phone.svg
+ create mode 100644 images/illustration-flowing-conversation.svg
+ create mode 100644 images/illustration-grow-together.svg
+ create mode 100644 images/illustration-mockups.svg
+ create mode 100644 images/illustration-your-users.svg
+ create mode 100644 images/logo.svg
+ create mode 100644 open.html
+ create mode 100644 zon.css
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git log
+commit 6afac265763ed4a04b0dc400a9e78cd467378894 (HEAD -> main)
+Author: kosiso <goodswill94@gmail.com>
+Date:   Fri Apr 7 07:57:55 2023 +0100
+
+    My first project in the month of March
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git remote add origin https://github.com/Kosisochii/Tommy.git
+
+<!-- HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main) -->
+<!-- $ git push --set-upstream origin master -->
+<!-- error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Kosisochii/Tommy.git'
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'. -->
+
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$ git push --set-upstream origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 65.04 KiB | 2.71 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Kosisochii/Tommy.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+HP@Kosisochukwu MINGW64 ~/Documents/March1901 (main)
+$
