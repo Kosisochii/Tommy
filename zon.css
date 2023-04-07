@@ -1,0 +1,290 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --Very-pale-cyan: hsl(193, 100%, 96%);
+    --Very-dark-cyan: hsl(192, 100%, 9%);
+    --Grayish-blue:  hsl(208, 11%, 55%);
+    --Font-size: 18px;
+    --Weight1: 600;
+    --Weight2: 400;
+    --weight3: 700;
+}
+header {
+    background-image: url('images/bg-hero-mobile.svg');
+}
+nav {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+.logo img {
+    width: 140px;
+}
+.try p {
+  font-size: var(--Font-size);
+  background-color: white;
+  padding: 10px 32px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px gainsboro;
+  color: var(--Very-dark-cyan);
+}
+.under-nav {
+    text-align: center;
+    margin-top: 80px;
+    padding: 0px 20px;
+}
+.under-nav h1 {
+    color: var(--Very-dark-cyan);
+    font-weight: 900;
+    font-size: 30px;
+}
+.under-nav p {
+    color: var(--Very-dark-cyan);
+    font-family: 'open sans', sans-serif;
+    line-height: 25px;
+    font-weight: var(--Weight2);
+    font-size: 18px;
+}
+button {
+    color: var(--Very-pale-cyan);
+    background-color: var(--pink);
+    padding: 20px 55px;
+    border: none;
+    border-radius: 30px;
+    font-size: var(--Font-size);
+    margin-top: 25px;
+}
+.mock img {
+    width: 330px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+main {
+    margin-top: 60px;
+    padding: 0px 20px;
+    font-family: 'open sans', sans-serif;
+}
+.main-container {
+    text-align: center;
+    box-shadow: 1px 1px 5px gainsboro;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+.img-part img {
+    width: 250px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.main-words p {
+  line-height: 30px;
+  color: var(--Grayish-blue);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: var(--Font-size);
+  padding-bottom: 30px;
+}
+
+.down-section {
+    background-color: var(--Very-dark-cyan);
+    margin-top: 350px;
+    /* padding-left: 20px; */
+    position: relative;
+}
+.ready {
+background-color: white;
+ box-shadow: 1px 1px 5px gainsboro;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ text-align: center;
+ border-radius: 15px;
+ position: absolute;
+ margin-left: 10px;
+ margin-right: 10px;
+ padding-left: 25px;
+ padding-right: 25px; 
+ margin-top: -130px;
+}
+.ready h3 {
+    color: var(--Very-dark-cyan);
+    font-family: 'open sans', sans-serif;
+}
+.hudd img {
+    margin-top: 200px;
+    padding-left: 20px;
+    width: 160px;
+}
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'open sans', sans-serif;
+}
+.holder img {
+     padding-right: 25px;
+}
+#litit {
+    margin-top: -10px;
+}
+.list {
+    font-family: 'open sans', sans-serif;
+    padding-top: 50px;
+    margin-bottom: -80px;
+}
+ul {
+    list-style: none;
+    padding-left: 20px;
+    color: white;
+}
+ul li {
+    padding-bottom: 20px;
+}
+.socials {
+    text-align: center;
+    color: white;
+    font-family: 'open sans', sans-serif;
+}
+.fa-brands {
+    color: white;
+    border: 1px solid white;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-top: 100px;
+
+} 
+.close {
+    color: white;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+footer {
+    background-color: var(--Very-dark-cyan);
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+    header {
+        background-image: url("images/bg-hero-desktop.svg");
+        padding-left: 60px;
+        padding-right: 60px;
+        background-color: rgb(244, 248, 248);
+    }
+    .under-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+        color: var(--Very-dark-cyan);
+        font-family: 'open sans';
+    }
+    .mock img {
+        width: 600px;
+        padding-right: 60px;
+    }
+    .build {
+        width: 500px;
+    }
+    .build h1 {
+        font-weight: 500;
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .build p {
+        color: var(--Very-dark-cyan);
+        font-weight: 520;
+    }
+    .main-container {
+        margin-left: 70px;
+        margin-right: 70px;
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .img-part img {
+        width: 500px;
+    }
+    .main-words {
+        width: 400px;
+    }
+    .main-words h2 {
+        padding-left: 10px;
+    }
+    #different {
+        margin-left: 70px;
+        margin-right: 70px;
+        display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .ready {
+        text-align: center;
+        margin-left: 340px;
+        width: 500px;
+    }.down-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .holder {
+        width: 350px;
+    }
+    .list {
+        padding-top: 200px;
+    }
+    ul li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .socials {
+        padding-top: 150px;
+    }
+    .fa-brands:hover {
+        color: var(--pink);
+        border: 1px solid var(--pink);
+        cursor: pointer;
+
+    }
+    .close {
+        text-align: right;
+        padding-right: 50px;
+    }
+    .close p {
+        font-size: small;
+        font-family: monospace;
+    }
+    button:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .try p:hover {
+        cursor: pointer;
+        color:var(--Grayish-blue);
+    }
+
+}
